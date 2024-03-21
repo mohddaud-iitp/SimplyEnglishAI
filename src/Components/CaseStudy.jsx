@@ -12,19 +12,39 @@ const CaseStudy = () => {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 3,  
         slidesToScroll: 1 ,
         autoplay: true,
         autoplayspeed: 2000, 
         cssEase: 'linear',
+        responsive: [
+         {
+           breakpoint: 1100,
+           settings: {
+             slidesToShow: 2,
+             slidesToScroll: 1,
+             infinite: false,
+             dots: false
+           }
+         },
+         {
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: false,
+              dots: false
+            }
+          },
+      ]
         
       };   
   
   return (
-    <div className='px-40 pt-20  flex flex-col' >
+    <div className='md:px-20 lg:px-40 pl-24 pr-8 pt-20  flex flex-col' > 
          <h1 className='text-[40px] font-medium underline underline-offset-20 decoration-underlineRed pb-2'>Case Study </h1>
          <div className='slider-container'>
-         <Slider {...settings} className='flex flex-row py-20 text-[21px] font-medium '> 
+         <Slider {...settings} className='flex flex-row py-20 text-[21px] font-medium'>  
          <div className='px-2'> 
             <img src = {craft} className='h-[460px] w-[370px]' />  
             <h1 className=' p-8'>Craft A+ Essays: Elevate your grades with Simply English's writing expertise.</h1>

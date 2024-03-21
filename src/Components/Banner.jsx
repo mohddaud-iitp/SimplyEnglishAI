@@ -4,10 +4,10 @@ import {banner, banner1,qr,googleplay, instagram, facebook, twitter} from '../as
 
 const About = () => {
   return ( 
-    <div className=' flex flex-row justify-between mt-28'>
-        <div className=' flex flex-col'>
+    <div className=' flex flex-col md:flex-row justify-between mt-28'>
+        <div className=' flex flex-col '>
            <div className='flex flex-row '>
-            <img src ={banner1} className=' h-[60%] pt-1' />
+            <img src ={banner1} className=' h-[60%] pt-1' />                   
             <div className='flex-col'>
                 <h1 className='text-[23px] font-medium'>Simply English AI</h1>  
                 <p> Your Gateway to Success!</p>
@@ -26,8 +26,8 @@ const About = () => {
           </ul>      
 
            <div className='my-6 flex flex-row'>
-              <img src={googleplay} alt = 'googleplay' className='h-[80px] pt-4'/>
-              <img src={qr} alt ='qr' className='h-[100px]' /> 
+              <img src={googleplay} alt = 'googleplay' className='h-[80px] pt-4'/> 
+              <img src={qr} alt ='qr' className='h-[100px]' />        
             </div>      
 
             {/* social media icons */}
@@ -48,8 +48,8 @@ const About = () => {
            {/* --social media icons-- */}
 
         </div>
-        <div>
-        <img src={banner} alt="billing" className="w-[100%] h-[100%] mx-9" /> 
+        <div className=''>
+        <img src={banner} alt="billing" className="w-[100%] h-[100%] " />  
         </div> 
 
        

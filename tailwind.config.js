@@ -26,7 +26,16 @@ export default {
         16:'16px',
         18:'18px', 
         20:'20px', 
-      } 
+      } ,
+      screens: {  
+        xs: "480px",  
+        ss: "620px",  
+        sm: "768px",   
+        nmd:"916px", 
+        md: "1060px",   
+        lg: "1200px",  
+        xl: "1700px",    
+      },
       }
     },
   

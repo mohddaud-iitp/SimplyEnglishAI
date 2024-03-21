@@ -49,6 +49,7 @@ import test6 from './test6.png'
 import voice from './voice.png'
 import voiceenabled from './voiceenabled.png'
 import watchvideo from './watchvideo.png'
+import navIcon from './nav_icon.png'
 
 
 
@@ -105,6 +106,6 @@ export {
   voice,
   voiceenabled,
   watchvideo,
-
+navIcon
 
 }

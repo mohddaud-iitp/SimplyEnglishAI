@@ -15,11 +15,31 @@ const ClientsView = () => {
         autoplay: true,
         autoplayspeed: 2000, 
         cssEase: 'linear',
+        responsive: [
+            {
+              breakpoint: 1100,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: false,
+                dots:true
+              }
+            },
+            {
+               breakpoint: 700,
+               settings: {
+                 slidesToShow: 1,
+                 slidesToScroll: 1,
+                 infinite: false,
+                 dots: true
+               }
+             },
+         ]
       }; 
       
 
   return (
-    <div className='px-40 pt-20  flex flex-col pb-32' >
+    <div className='md:px-20 lg:px-40 pl-20 pr-8 pt-20  flex flex-col pb-32' >
          <h1 className='text-[40px] font-medium underline underline-offset-20 decoration-underlineRed pb-2'>What our clients say </h1>
          <div >
          <Slider {...settings} className='flex flex-row  ' > 
@@ -101,14 +121,14 @@ const ClientsView = () => {
             </div>     
                                      
 </Slider>    
-            
+           
       
             
         
           
-         </div>  
-    </div>      
-  )              
-}     
-           
+         </div> 
+    </div>  
+  )
+}
+
 export default ClientsView 

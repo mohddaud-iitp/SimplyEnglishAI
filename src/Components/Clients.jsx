@@ -10,12 +10,65 @@ const Clients = () => {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 7,
+        slidesToShow:7, 
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         speed:2000,
-        cssEase:'linear'
+        cssEase:'linear',
+        responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 7,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1
+            }
+
+          },
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+
+          },
+          
+        ]
+
 
       };
 
