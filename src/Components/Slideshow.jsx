@@ -21,7 +21,7 @@ const Slideshow = () => {
            making learning on SimplyEnglish a breeze.</p>    
       </div> 
       <div className='z-[0] absolute flex flex-row pl-[800px] ' >     
-        <img src = {circle} className='h-[300px] w-[350px]'/> 
+        <img src = {circle} className='h-[300px] w-[350px] '/> 
       </div>
 
       </div>  
